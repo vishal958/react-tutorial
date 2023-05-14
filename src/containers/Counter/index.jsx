@@ -17,7 +17,7 @@ const FirstComponent = () => {
   return (
     <div>
       <h1> Counter Value : {counter}</h1>
-      <button onClick={incrementCounter}>Increment Counter</button>
+      <button onClick={incrementCounter}>Incrementaqswder Counter</button>
       <button onClick={decrementCounter}>Decrement Counter</button>
     </div>
   );
