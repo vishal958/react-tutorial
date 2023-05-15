@@ -22,7 +22,7 @@ const Counter = ({ name, countervalue }) => {
   return (
     <div>
       <h1> Counter Value : {counter}</h1>
-      <input value={inputvalue} onChange={changeInputvalue} />
+      <input type="number" value={inputvalue} onChange={changeInputvalue} />
       <button onClick={incrementCounter}>Increment Counter</button>
       <button onClick={decrementCounter}>Decrement Counter</button>
     </div>
