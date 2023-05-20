@@ -1,11 +1,12 @@
 import React from 'react';
-import Counter from './containers/Counter';
+
+import ContextWrapper from './containers/ContextWrapper';
 import './styles.css';
 
 export default function App() {
   return (
     <div className="App">
-      <Counter />
+      <ContextWrapper />
     </div>
   );
 }

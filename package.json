@@ -8,8 +8,15 @@
   ],
   "main": "src/index.js",
   "dependencies": {
+    "@types/react": "^16.8 || ^17.0 || ^18.0",
+    "@types/react-dom": "^16.8 || ^17.0 || ^18.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-native": ">=0.59",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.11.2",
+    "redux": "^4.2.1",
+    "redux-saga": "^1.2.3"
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",
