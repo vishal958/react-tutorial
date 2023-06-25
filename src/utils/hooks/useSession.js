@@ -62,6 +62,10 @@ const useSessionManager = () => {
     initializeInactivityTimer();
   };
 
+  const handleActivity = () => {
+    resetInactivityTimer();
+  };
+
   const login = (accessToken, refreshToken) => {
     setSession({
       accessToken,
@@ -91,6 +95,10 @@ const useSessionManager = () => {
     );
 
     initializeInactivityTimer();
+
+    // Mouse and keyboard activity event listeners
+    document.addEventListener('mousemove', handleActivity);
+    document.addEventListener('keydown', handleActivity);
 
     return () => {
       axiosInstance.interceptors.request.eject(requestInterceptor);
